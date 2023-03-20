@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fish_array">
+        <item>Карп</item>
+        <item>Щука</item>
+        <item>Сом</item>
+        <item>Семга</item>
+        <item>Лосось</item>
+    </string-array>
+
+    <string-array name="Bait">
+        <item>Червь</item>
+        <item>Хлеб</item>
+        <item>Кукуруза</item>
+    </string-array>
+        
+</resources>
