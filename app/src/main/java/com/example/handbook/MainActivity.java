@@ -1,6 +1,7 @@
 package com.example.handbook;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
@@ -9,6 +10,7 @@ import android.widget.ListView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -19,6 +21,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.handbook.databinding.ActivityMainBinding;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     private ListView list;
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         list = findViewById(R.id.listView);
         array = getResources().getStringArray(R.array.fish_array);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,new ArrayList<String>(Arrays.asList(array)));
         list.setAdapter(adapter);
 
         setSupportActionBar(binding.appBarMain.toolbar);
@@ -65,5 +69,28 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public boolean onNavigationItemSelected(MenuItem item){
+        int id = item.getItemId();
+        if(id == R.id.fish){
+
+        }else if
+        (id == R.id.spiner){
+
+        }else if
+        (id == R.id.bilt){
+
+        }else if
+        (id == R.id.story){
+
+        }else if
+        (id ==R.id.lifehack)
+        {
+
+        }
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

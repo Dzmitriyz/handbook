@@ -13,5 +13,23 @@
         <item>Хлеб</item>
         <item>Кукуруза</item>
     </string-array>
+
+    <string-array name="spiner">
+        <item>Большая</item>
+        <item>Средняя</item>
+        <item>Маленькая</item>
+    </string-array>
+
+    <string-array name="story">
+        <item>Как поймал большую</item>
+        <item>Как ничего не поймал</item>
+        <item>Как начал рыбачить</item>
+    </string-array>
+
+    <string-array name="lifehack">
+        <item>Как ловить больше</item>
+        <item>Где лучше ловить</item>
+        <item>Типичные ошибки</item>
+    </string-array>
         
 </resources>
