@@ -2,12 +2,10 @@ package com.example.handbook;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.core.view.GravityCompat;
@@ -20,7 +18,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.handbook.databinding.ActivityMainBinding;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -107,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
     public void String (){
         System.out.println("test");
     }
+
 }
